@@ -1,0 +1,277 @@
+/* Main page CSS */
+
+#conteudo{
+  text-align: center;
+}
+
+#logotipo{
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+#myNavbar{
+  padding-left: 50px;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;      
+}
+.navbar-right li a {
+  color: white;
+}
+.navbar-right{
+  position: relative;
+  top: 15px;
+  right: 0;
+}   
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 83.75vh}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px 15px 5px 15px;
+  margin-bottom: 0;
+  height: 50px;
+}
+body{padding-bottom: 50px;}
+
+#login_sm{
+  display: none;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  footer{
+  	padding-top: 5px;
+  }
+  .row.content {height:auto;}
+  
+  body{
+    height: 100%;
+  }
+  #login_sm{
+    display: inline;
+    padding-top: 10px;             
+  }
+  #login_sm a{
+    color: white;
+  }
+  .navbar-right{
+    display: none;
+  }
+  #main_links{
+    list-style: none;
+  } 
+  #main_links li {
+    float: left;
+
+  }
+}
+
+/* CSS related to the QuemSomos page */
+#quemSomos{
+	border: solid 2px lightblue;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 2px;
+}
+#corpoTexto{
+	background-color: lightgrey;
+	border-radius: 8px;
+	padding: 5px;
+	margin-left: 5px;
+	text-align: justify;
+}
+#quemsomos_title{
+	color: CornflowerBlue;
+	font-style: strong;
+	text-align: center;	
+}
+/* CSS related to the home page */
+.principal_home{
+	max-width: 950px;		
+	font-family: arial;
+	display: inline-block;
+	border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+}
+#welcome{
+	color: CornflowerBlue;
+	font-style: strong;
+	text-align: center;	 
+}
+.linha{border-color: lightblue;}	
+#textoMenor{font-size: 14px;}
+img{    
+	margin: auto;
+}
+#myCarousel{
+	width: 90%;
+}
+#extra_home{
+	background-color: lightgrey;
+	border-radius: 8px;
+	padding: 5px;    
+	margin-top: 10px;       
+	text-align: justify;
+	width: 100%; 
+}  
+@media (max-width: 768px) {
+  #welcome{
+    color: CornflowerBlue;
+    font-style: strong;
+    text-align: center;
+    margin: auto;      
+  }
+}
+
+/* CSS related to the precos page */
+#principal_precos{
+	max-width: 950px;
+	text-align: left;
+	font-family: arial;		
+	display: block;		
+	padding: 10px;
+	margin: 2px;
+	text-align: center;
+	margin: auto;
+}	
+
+#precos_title{
+	color: CornflowerBlue;
+	font-style: strong;
+}
+
+.categoria{
+	display: inline-block;
+	text-align: center;
+	font-family: arial;
+	border: 2px solid lightgrey;
+	padding: 10px;
+	border-radius: 8px;
+	margin: 2px;
+	margin: auto;
+
+}
+
+#categoria_AM{text-align: center;}
+
+#categorias{
+	display: block;
+	align-items: center;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	#principal_precos{
+		text-align: center;
+		margin: auto;
+	}
+	.categoria{
+		text-align: center center;
+	}
+}
+
+/* CSS related to the FAQS page */
+.principal_faq{
+	text-align: center;
+	font-family: arial;
+	border: 2px solid lightblue;
+	display: inline-block;
+	border-radius: 8px;	
+	width: 100%;
+	
+}
+#faq_title{
+	color: CornflowerBlue;
+	font-style: strong;
+}
+.linha{border-color: lightblue;}	
+#textoMenor{font-size: 14px;}
+
+
+/* CSS related to the Contacts page */
+
+#location_address{
+	text-align: center;
+	
+}
+#map {	
+	width: 400px;
+	height: 400px;
+}
+
+.morada{
+	text-align: left;
+	background-color: lightgrey;
+	border-radius: 8px;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+.contactos{
+	text-align: left;
+	background-color: lightgrey;
+	border-radius: 8px;
+	padding: 5px;
+	margin-left: 5px;		
+}
+
+.horario{
+	text-align: left;	
+	background-color: lightgrey;
+	border-radius: 8px;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+.wid{
+	max-width: 410px;	
+	padding: 5px;	
+}
+
+#horario_title{
+	color: CornflowerBlue;
+	font-style: strong;
+}
+@media (max-width: 768px) {
+	.wid{
+		width: 100%;
+	}
+	#map{
+	  display: block;
+	 
+	  width: 100%;
+	  margin: auto;      
+	}	
+}
+
+/* CSS related to the footer of the index page */
+#footer_items{
+	width: 100%;	
+	text-align: center;
+}
+#footer_items > li{
+	display: inline-block;
+	margin-right: 50px;
+}
+#footer_items a{
+	text-decoration: none;
+	color: white;
+}
+
