@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login facebook with javascritp</title>
+</head>
+<body>
+
+	<script>
+	  // initialize and set up facebook javascript sdk
+	  window.fbAsyncInit = function() {
+	    FB.init({
+		    appId      : '170697620345126',
+		    cookie     : true,
+		    xfbml      : true,
+		    version    : 'v2.11'
+	  	});
+
+	    FB.getLoginStatus(function(response){
+	    	if(response.status === "connected"){
+	    		document.getElementById("status").innerHTML="Okay you are connected";
+	    	}else if(response.status==="not_authorized"){
+	    		document.getElementById("status").innerHTML="You are not connected.";
+	    	}else{
+	    		document.getElementById("status").innerHTML="You are not logged in facebook account.";
+	    	}
+	    });
+	      
+	  	FB.AppEvents.logPageView();  
+
+	      
+	  	};
+
+	  (function(d, s, id){
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) {return;}
+	    js = d.createElement(s); js.id = id;
+	    js.src = "https://connect.facebook.net/en_US/sdk.js";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
+
+	  function login(){
+	  	FB.login(function(response){
+	  		if(response.status === "connected"){
+	    		document.getElementById("status").innerHTML="Okay you are connected";
+	    	}else if(response.status==="not_authorized"){
+	    		document.getElementById("status").innerHTML="You are not connected.";
+	    	}else{
+	    		document.getElementById("status").innerHTML="You are not logged in facebook account.";
+	    	}
+	  	});
+	  }
+
+	  function info(){
+	  	FB.api('/me','GET',{fields: 'name, email, id'}, function(response){
+	  		document.getElementById('status').innerHTML=response.id;
+	  	})
+	  }
+	</script>
+
+	<div id="status">		
+	</div>
+	<button onclick='login();'>Login</button>
+	<button onclick='info();'>Info</button>
+</body>
+</html>

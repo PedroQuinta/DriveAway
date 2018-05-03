@@ -1,0 +1,19 @@
+-pagina semalhante do calendario mas com parametros de GET √
+-o canecelar é igual ao pedidio de cancelar, so lterar o id do estado! √
+-o marcar aula vai precisar de uma pagina nova,em principio! √
+- verificação dos buttons consuante a data de HOJE √
+-defenir $_SESSION de idfunc e idaluno!!!!
+
+-gestão de notificações, SQL com estado 1 e 3;
+
+-adicionar server[root] as paginas ja feitas e PDO!
+
+-testar codigo de recuperação de PSW - funciona.. precisa de se alterar
+
+- sql de update no marcar aula!/e pedidos (por testar)
+
+- pagina de ver_aula ! secretaria tem vista difrente (√ - em princpio)
+
+- marcar! - exame! (checkbox e textbox com localização) √
+
+- P&R - compo respondido, rever sql
